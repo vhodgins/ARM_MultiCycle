@@ -1,0 +1,15 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../ARM_MultiCycle.srcs/sources_1/imports/Imported files/ALU.vhd" \
+"../../../../ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_SC.vhd" \
+"../../../../ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_SC_Cond_Logic.vhd" \
+"../../../../ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_SC_Controller.vhd" \
+"../../../../ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_SC_Datapath.vhd" \
+"../../../../ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_SC_Decoder.vhd" \
+"../../../../ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_SC_RegFile.vhd" \
+"../../../../ARM_MultiCycle.srcs/sources_1/new/Memory.vhd" \
+"../../../../Shifter.vhd" \
+"../../../../ARM_MultiCycle.srcs/sim_1/imports/new/Test_ARM_SC.vhd" \
+
+# Do not sort compile order
+nosort

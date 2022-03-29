@@ -1,0 +1,56 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Wed Dec  8 14:29:16 2021
+# Process ID: 1436
+# Current directory: C:/School/Fall_2021/eece351/ARM_MultiCycle
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3228 C:\School\Fall_2021\eece351\ARM_MultiCycle\ARM_MultiCycle.xpr
+# Log file: C:/School/Fall_2021/eece351/ARM_MultiCycle/vivado.log
+# Journal file: C:/School/Fall_2021/eece351/ARM_MultiCycle\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sim_1/imports/ARM_MultiCycle/Test_ARM_SC_behav.wcfg
+source Test_ARM_SC.tcl
+run .8 us
+restart
+run .8 us
+restart
+run .62 us
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+save_wave_config {C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sim_1/imports/ARM_MultiCycle/Test_ARM_SC_behav.wcfg}
+add_files -norecurse {{C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_Control.vhd} {C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_TopLevel.vhd} {C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/debounce.vhd}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+file mkdir C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/constrs_1
+add_files -fileset constrs_1 -norecurse C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_Processor_Basys3.xdc
+add_files -norecurse C:/School/Fall_2021/eece351/ARM_MultiCycle/HEXon7segDisp.vhd
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.runs/impl_1/ARM_TopLevel.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.runs/impl_1/ARM_TopLevel.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.runs/impl_1/ARM_TopLevel.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+archive_project C:/School/Fall_2021/eece351/ARM_MultiCycle.xpr.zip -temp_dir C:/School/Fall_2021/eece351/ARM_MultiCycle/.Xil/Vivado-1436-DESKTOP-OPSDREQ -force -include_local_ip_cache
+close_sim

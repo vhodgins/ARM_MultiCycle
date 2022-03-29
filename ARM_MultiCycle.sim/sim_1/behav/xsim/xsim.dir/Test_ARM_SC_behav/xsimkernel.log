@@ -1,0 +1,7 @@
+Running: xsim.dir/Test_ARM_SC_behav/xsimk.exe -simmode gui -wdb Test_ARM_SC_behav.wdb -simrunnum 0 -socket 57575
+Design successfully loaded
+Design Loading Memory Usage: 6772 KB (Peak: 6772 KB)
+Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 7744 KB (Peak: 7744 KB)
+Simulation CPU Usage: 61 ms

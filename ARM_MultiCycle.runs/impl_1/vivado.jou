@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Wed Dec  8 15:16:18 2021
+# Process ID: 11760
+# Current directory: C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.runs/impl_1
+# Command line: vivado.exe -log ARM_TopLevel.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source ARM_TopLevel.tcl -notrace
+# Log file: C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.runs/impl_1/ARM_TopLevel.vdi
+# Journal file: C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source ARM_TopLevel.tcl -notrace

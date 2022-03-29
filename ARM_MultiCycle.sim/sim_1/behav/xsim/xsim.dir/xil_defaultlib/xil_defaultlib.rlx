@@ -1,0 +1,14 @@
+0.7
+2020.2
+Jun 10 2021
+20:04:57
+C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sim_1/imports/new/Test_ARM_SC.vhd,1637079264,vhdl,,,,test_arm_sc,,,,,,,,
+C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ALU.vhd,1638989660,vhdl,,,,alu,,,,,,,,
+C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_SC.vhd,1638816722,vhdl,,,,arm,,,,,,,,
+C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_SC_Cond_Logic.vhd,1638383108,vhdl,,,,cond_logic,,,,,,,,
+C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_SC_Controller.vhd,1638816896,vhdl,,,,controller,,,,,,,,
+C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_SC_Datapath.vhd,1638988705,vhdl,,,,datapath,,,,,,,,
+C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_SC_Decoder.vhd,1638990879,vhdl,,,,decoder,,,,,,,,
+C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_SC_RegFile.vhd,1636557510,vhdl,,,,register_file,,,,,,,,
+C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/new/Memory.vhd,1638985907,vhdl,,,,memory,,,,,,,,
+C:/School/Fall_2021/eece351/ARM_MultiCycle/Shifter.vhd,1638988904,vhdl,,,,shifter,,,,,,,,

@@ -1,0 +1,124 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Wed Dec  8 14:21:24 2021
+# Process ID: 4248
+# Current directory: C:/School/Fall_2021/eece351/ARM_MultiCycle
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8764 C:\School\Fall_2021\eece351\ARM_MultiCycle\ARM_MultiCycle.xpr
+# Log file: C:/School/Fall_2021/eece351/ARM_MultiCycle/vivado.log
+# Journal file: C:/School/Fall_2021/eece351/ARM_MultiCycle\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'.
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:09 . Memory (MB): peak = 1469.816 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Test_ARM_SC'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Test_ARM_SC' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Test_ARM_SC_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ALU'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_SC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ARM'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_SC_Cond_Logic.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Cond_Logic'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_SC_Controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'controller'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_SC_Datapath.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'datapath'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_SC_Decoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Decoder'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_SC_RegFile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Register_File'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/new/Memory.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Memory'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/School/Fall_2021/eece351/ARM_MultiCycle/Shifter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Shifter'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sim_1/imports/new/Test_ARM_SC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Test_ARM_SC'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.sim/sim_1/behav/xsim'
+"xelab -wto 52cca72da4634ef88f80d83c6d745856 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Test_ARM_SC_behav xil_defaultlib.Test_ARM_SC -log elaborate.log"
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 52cca72da4634ef88f80d83c6d745856 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Test_ARM_SC_behav xil_defaultlib.Test_ARM_SC -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-8437] comparison between unequal length arrays always returns FALSE, left argument length 5 is different from right argument length 4 for 'std_logic_vector_93' array [C:/School/Fall_2021/eece351/ARM_MultiCycle/Shifter.vhd:55]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Decoder [decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.Cond_Logic [cond_logic_default]
+Compiling architecture behavioral of entity xil_defaultlib.controller [controller_default]
+Compiling architecture behavioral of entity xil_defaultlib.Register_File [register_file_default]
+Compiling architecture behavioral of entity xil_defaultlib.Memory [memory_default]
+Compiling architecture behavioral of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.Shifter [shifter_default]
+Compiling architecture behavioral of entity xil_defaultlib.datapath [datapath_default]
+Compiling architecture behavioral of entity xil_defaultlib.ARM [arm_default]
+Compiling architecture behavioral of entity xil_defaultlib.test_arm_sc
+Built simulation snapshot Test_ARM_SC_behav
+
+****** Webtalk v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.sim/sim_1/behav/xsim/xsim.dir/Test_ARM_SC_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.sim/sim_1/behav/xsim/xsim.dir/Test_ARM_SC_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Dec  8 14:22:19 2021. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2021.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Dec  8 14:22:19 2021...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 1469.816 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '13' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Test_ARM_SC_behav -key {Behavioral:sim_1:Functional:Test_ARM_SC} -tclbatch {Test_ARM_SC.tcl} -view {C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sim_1/imports/ARM_MultiCycle/Test_ARM_SC_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sim_1/imports/ARM_MultiCycle/Test_ARM_SC_behav.wcfg
+source Test_ARM_SC.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Test_ARM_SC_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 1469.816 ; gain = 0.000
+run 3 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 3 us
+save_wave_config {C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sim_1/imports/ARM_MultiCycle/Test_ARM_SC_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1469.816 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Dec  8 14:27:37 2021...

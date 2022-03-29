@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Wed Dec  8 14:21:24 2021
+# Process ID: 4248
+# Current directory: C:/School/Fall_2021/eece351/ARM_MultiCycle
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8764 C:\School\Fall_2021\eece351\ARM_MultiCycle\ARM_MultiCycle.xpr
+# Log file: C:/School/Fall_2021/eece351/ARM_MultiCycle/vivado.log
+# Journal file: C:/School/Fall_2021/eece351/ARM_MultiCycle\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sim_1/imports/ARM_MultiCycle/Test_ARM_SC_behav.wcfg
+source Test_ARM_SC.tcl
+run 3 us
+restart
+run 3 us
+save_wave_config {C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sim_1/imports/ARM_MultiCycle/Test_ARM_SC_behav.wcfg}
+close_sim

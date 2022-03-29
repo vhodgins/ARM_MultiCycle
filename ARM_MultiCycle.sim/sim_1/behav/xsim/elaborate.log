@@ -1,0 +1,25 @@
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 52cca72da4634ef88f80d83c6d745856 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Test_ARM_SC_behav xil_defaultlib.Test_ARM_SC -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-8437] comparison between unequal length arrays always returns FALSE, left argument length 5 is different from right argument length 4 for 'std_logic_vector_93' array [C:/School/Fall_2021/eece351/ARM_MultiCycle/Shifter.vhd:55]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Decoder [decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.Cond_Logic [cond_logic_default]
+Compiling architecture behavioral of entity xil_defaultlib.controller [controller_default]
+Compiling architecture behavioral of entity xil_defaultlib.Register_File [register_file_default]
+Compiling architecture behavioral of entity xil_defaultlib.Memory [memory_default]
+Compiling architecture behavioral of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.Shifter [shifter_default]
+Compiling architecture behavioral of entity xil_defaultlib.datapath [datapath_default]
+Compiling architecture behavioral of entity xil_defaultlib.ARM [arm_default]
+Compiling architecture behavioral of entity xil_defaultlib.test_arm_sc
+Built simulation snapshot Test_ARM_SC_behav

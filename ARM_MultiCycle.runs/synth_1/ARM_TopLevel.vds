@@ -1,0 +1,368 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Wed Dec  8 15:10:35 2021
+# Process ID: 7732
+# Current directory: C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.runs/synth_1
+# Command line: vivado.exe -log ARM_TopLevel.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ARM_TopLevel.tcl
+# Log file: C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.runs/synth_1/ARM_TopLevel.vds
+# Journal file: C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source ARM_TopLevel.tcl -notrace
+Command: synth_design -top ARM_TopLevel -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 7204
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1139.352 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ARM_TopLevel' [C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_TopLevel.vhd:41]
+	Parameter DELAY bound to: 640000 - type: integer 
+INFO: [Synth 8-3491] module 'ARM_Control' declared at 'C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_Control.vhd:23' bound to instance 'i_ARM_Control' of component 'ARM_Control' [C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_TopLevel.vhd:105]
+INFO: [Synth 8-638] synthesizing module 'ARM_Control' [C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_Control.vhd:36]
+	Parameter DELAY bound to: 640000 - type: integer 
+	Parameter DELAY bound to: 640000 - type: integer 
+INFO: [Synth 8-3491] module 'debounce' declared at 'C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/debounce.vhd:25' bound to instance 'debounce_run' of component 'debounce' [C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_Control.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'debounce' [C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/debounce.vhd:34]
+	Parameter DELAY bound to: 640000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'debounce' (1#1) [C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/debounce.vhd:34]
+	Parameter DELAY bound to: 640000 - type: integer 
+INFO: [Synth 8-3491] module 'debounce' declared at 'C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/debounce.vhd:25' bound to instance 'debounce_rst' of component 'debounce' [C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_Control.vhd:69]
+	Parameter DELAY bound to: 640000 - type: integer 
+INFO: [Synth 8-3491] module 'debounce' declared at 'C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/debounce.vhd:25' bound to instance 'debounce_step' of component 'debounce' [C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_Control.vhd:79]
+	Parameter DELAY bound to: 640000 - type: integer 
+INFO: [Synth 8-3491] module 'debounce' declared at 'C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/debounce.vhd:25' bound to instance 'debounce_bp' of component 'debounce' [C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_Control.vhd:89]
+INFO: [Synth 8-256] done synthesizing module 'ARM_Control' (2#1) [C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_Control.vhd:36]
+	Parameter addr_size bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'ARM' declared at 'C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_SC.vhd:24' bound to instance 'i_arm' of component 'ARM' [C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_TopLevel.vhd:120]
+INFO: [Synth 8-638] synthesizing module 'ARM' [C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_SC.vhd:35]
+WARNING: [Synth 8-3819] Generic 'addr_size' not present in instantiated entity will be ignored [C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_TopLevel.vhd:120]
+INFO: [Synth 8-3491] module 'controller' declared at 'C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_SC_Controller.vhd:23' bound to instance 'i_controller' of component 'controller' [C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_SC.vhd:126]
+INFO: [Synth 8-638] synthesizing module 'controller' [C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_SC_Controller.vhd:41]
+INFO: [Synth 8-3491] module 'Decoder' declared at 'C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_SC_Decoder.vhd:24' bound to instance 'i_Decoder' of component 'Decoder' [C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_SC_Controller.vhd:105]
+INFO: [Synth 8-638] synthesizing module 'Decoder' [C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_SC_Decoder.vhd:55]
+WARNING: [Synth 8-614] signal 'state' is read in the process but is not in the sensitivity list [C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_SC_Decoder.vhd:160]
+WARNING: [Synth 8-614] signal 'en_arm' is read in the process but is not in the sensitivity list [C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_SC_Decoder.vhd:160]
+WARNING: [Synth 8-614] signal 'Op' is read in the process but is not in the sensitivity list [C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_SC_Decoder.vhd:160]
+WARNING: [Synth 8-614] signal 'Funct' is read in the process but is not in the sensitivity list [C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_SC_Decoder.vhd:160]
+WARNING: [Synth 8-614] signal 'ALUDecOp' is read in the process but is not in the sensitivity list [C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_SC_Decoder.vhd:160]
+INFO: [Synth 8-256] done synthesizing module 'Decoder' (3#1) [C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_SC_Decoder.vhd:55]
+INFO: [Synth 8-3491] module 'Cond_Logic' declared at 'C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_SC_Cond_Logic.vhd:23' bound to instance 'i_Cond_Logic' of component 'Cond_Logic' [C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_SC_Controller.vhd:128]
+INFO: [Synth 8-638] synthesizing module 'Cond_Logic' [C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_SC_Cond_Logic.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'Cond_Logic' (4#1) [C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_SC_Cond_Logic.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'controller' (5#1) [C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_SC_Controller.vhd:41]
+INFO: [Synth 8-3491] module 'datapath' declared at 'C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_SC_Datapath.vhd:24' bound to instance 'i_datapath' of component 'datapath' [C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_SC.vhd:149]
+INFO: [Synth 8-638] synthesizing module 'datapath' [C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_SC_Datapath.vhd:57]
+	Parameter addr_width bound to: 9 - type: integer 
+	Parameter data_width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'Register_File' declared at 'C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_SC_RegFile.vhd:14' bound to instance 'i_Register_File' of component 'Register_File' [C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_SC_Datapath.vhd:210]
+INFO: [Synth 8-638] synthesizing module 'Register_File' [C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_SC_RegFile.vhd:23]
+	Parameter data_size bound to: 32 - type: integer 
+	Parameter addr_size bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Register_File' (6#1) [C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_SC_RegFile.vhd:23]
+	Parameter data_width bound to: 32 - type: integer 
+	Parameter addr_width bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'Memory' declared at 'C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/new/Memory.vhd:37' bound to instance 'i_idmem' of component 'Memory' [C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_SC_Datapath.vhd:223]
+INFO: [Synth 8-638] synthesizing module 'Memory' [C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/new/Memory.vhd:46]
+	Parameter data_width bound to: 32 - type: integer 
+	Parameter addr_width bound to: 9 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Memory' (7#1) [C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/new/Memory.vhd:46]
+INFO: [Synth 8-3491] module 'ALU' declared at 'C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ALU.vhd:15' bound to instance 'i_ALU' of component 'ALU' [C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_SC_Datapath.vhd:235]
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ALU.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (8#1) [C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ALU.vhd:24]
+INFO: [Synth 8-3491] module 'Shifter' declared at 'C:/School/Fall_2021/eece351/ARM_MultiCycle/Shifter.vhd:35' bound to instance 'i_shifter' of component 'Shifter' [C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_SC_Datapath.vhd:247]
+INFO: [Synth 8-638] synthesizing module 'Shifter' [C:/School/Fall_2021/eece351/ARM_MultiCycle/Shifter.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'Shifter' (9#1) [C:/School/Fall_2021/eece351/ARM_MultiCycle/Shifter.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'datapath' (10#1) [C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_SC_Datapath.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'ARM' (11#1) [C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_SC.vhd:35]
+INFO: [Synth 8-3491] module 'HEXon7segDisp' declared at 'C:/School/Fall_2021/eece351/ARM_MultiCycle/HEXon7segDisp.vhd:12' bound to instance 'i_HEXon7segDisp' of component 'HEXon7segDisp' [C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_TopLevel.vhd:139]
+INFO: [Synth 8-638] synthesizing module 'HEXon7segDisp' [C:/School/Fall_2021/eece351/ARM_MultiCycle/HEXon7segDisp.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'HEXon7segDisp' (12#1) [C:/School/Fall_2021/eece351/ARM_MultiCycle/HEXon7segDisp.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'ARM_TopLevel' (13#1) [C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_TopLevel.vhd:41]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1139.352 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1139.352 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1139.352 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1139.352 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_Processor_Basys3.xdc]
+Finished Parsing XDC File [C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_Processor_Basys3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_Processor_Basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ARM_TopLevel_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ARM_TopLevel_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1139.352 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1139.352 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1139.352 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1139.352 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1139.352 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'debounce'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Decoder'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s1 |                            00001 |                              000
+                      s2 |                            00010 |                              001
+                      s3 |                            00100 |                              010
+                      s4 |                            01000 |                              011
+                      s5 |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'debounce'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              fetchstate |                             0000 |                             0000
+             decodestate |                             0001 |                             0001
+             memadrstate |                             0010 |                             0010
+            memreadstate |                             0011 |                             0011
+              memwbstate |                             0100 |                             0100
+           memwritestate |                             0101 |                             0101
+             branchstate |                             0110 |                             1001
+           executerstate |                             0111 |                             0110
+           executeistate |                             1000 |                             0111
+              aluwbstate |                             1001 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'Decoder'
+WARNING: [Synth 8-327] inferring latch for variable 'Result1_reg' [C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ALU.vhd:50]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1139.352 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   33 Bit       Adders := 1     
+	   2 Input   11 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 4     
++---Registers : 
+	               32 Bit    Registers := 6     
+	               11 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 16    
+	   2 Input   10 Bit        Muxes := 1     
+	   5 Input   10 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 2     
+	   2 Input    6 Bit        Muxes := 1     
+	   5 Input    5 Bit        Muxes := 4     
+	   2 Input    5 Bit        Muxes := 27    
+	  10 Input    4 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 8     
+	   3 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   5 Input    4 Bit        Muxes := 1     
+	  10 Input    2 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 2     
+	  19 Input    2 Bit        Muxes := 1     
+	   5 Input    1 Bit        Muxes := 9     
+	  10 Input    1 Bit        Muxes := 10    
+	   8 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1139.352 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++-------------+----------------------------------------------+-----------+----------------------+-----------------+
+|Module Name  | RTL Object                                   | Inference | Size (Depth x Width) | Primitives      | 
++-------------+----------------------------------------------+-----------+----------------------+-----------------+
+|ARM_TopLevel | i_arm/i_datapath/i_Register_File/RegFile_reg | Implied   | 16 x 32              | RAM32M x 12     | 
+|ARM_TopLevel | i_arm/i_datapath/i_idmem/Instr_MEM_reg       | Implied   | 512 x 32             | RAM256X1S x 64  | 
++-------------+----------------------------------------------+-----------+----------------------+-----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1139.352 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 1175.410 ; gain = 36.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++-------------+----------------------------------------------+-----------+----------------------+-----------------+
+|Module Name  | RTL Object                                   | Inference | Size (Depth x Width) | Primitives      | 
++-------------+----------------------------------------------+-----------+----------------------+-----------------+
+|ARM_TopLevel | i_arm/i_datapath/i_Register_File/RegFile_reg | Implied   | 16 x 32              | RAM32M x 12     | 
+|ARM_TopLevel | i_arm/i_datapath/i_idmem/Instr_MEM_reg       | Implied   | 512 x 32             | RAM256X1S x 64  | 
++-------------+----------------------------------------------+-----------+----------------------+-----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:51 ; elapsed = 00:00:53 . Memory (MB): peak = 1191.668 ; gain = 52.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 1205.512 ; gain = 66.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 1205.512 ; gain = 66.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 1205.512 ; gain = 66.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 1205.512 ; gain = 66.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 1205.512 ; gain = 66.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 1205.512 ; gain = 66.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     1|
+|2     |CARRY4    |    41|
+|3     |LUT1      |    89|
+|4     |LUT2      |    26|
+|5     |LUT3      |   107|
+|6     |LUT4      |    90|
+|7     |LUT5      |   116|
+|8     |LUT6      |   316|
+|9     |RAM256X1S |    64|
+|10    |RAM32M    |    10|
+|11    |RAM32X1D  |     4|
+|12    |FDRE      |   305|
+|13    |FDSE      |    24|
+|14    |IBUF      |    13|
+|15    |OBUF      |    20|
++------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 1205.512 ; gain = 66.160
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:43 ; elapsed = 00:00:54 . Memory (MB): peak = 1205.512 ; gain = 66.160
+Synthesis Optimization Complete : Time (s): cpu = 00:00:56 ; elapsed = 00:00:59 . Memory (MB): peak = 1205.512 ; gain = 66.160
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 1217.574 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 119 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1221.254 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 78 instances were transformed.
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 64 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 10 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
+
+Synth Design complete, checksum: 864584f5
+INFO: [Common 17-83] Releasing license: Synthesis
+60 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:04 ; elapsed = 00:01:09 . Memory (MB): peak = 1221.254 ; gain = 81.902
+INFO: [Common 17-1381] The checkpoint 'C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.runs/synth_1/ARM_TopLevel.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ARM_TopLevel_utilization_synth.rpt -pb ARM_TopLevel_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Dec  8 15:11:51 2021...

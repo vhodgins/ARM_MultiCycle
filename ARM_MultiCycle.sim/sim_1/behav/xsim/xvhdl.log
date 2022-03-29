@@ -1,0 +1,20 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ALU'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_SC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ARM'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_SC_Cond_Logic.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Cond_Logic'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_SC_Controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'controller'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_SC_Datapath.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'datapath'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_SC_Decoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Decoder'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/imports/Imported files/ARM_SC_RegFile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Register_File'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sources_1/new/Memory.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Memory'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/School/Fall_2021/eece351/ARM_MultiCycle/Shifter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Shifter'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/School/Fall_2021/eece351/ARM_MultiCycle/ARM_MultiCycle.srcs/sim_1/imports/new/Test_ARM_SC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Test_ARM_SC'

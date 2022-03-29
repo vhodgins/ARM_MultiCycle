@@ -1,0 +1,69 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Fri Dec  3 10:50:34 2021
+# Process ID: 42932
+# Current directory: C:/Users/hkarp/Documents/Final Projects Fall 2021/DSD Final Project/ARM_MultiCycle
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19208 C:\Users\hkarp\Documents\Final Projects Fall 2021\DSD Final Project\ARM_MultiCycle\ARM_MultiCycle.xpr
+# Log file: C:/Users/hkarp/Documents/Final Projects Fall 2021/DSD Final Project/ARM_MultiCycle/vivado.log
+# Journal file: C:/Users/hkarp/Documents/Final Projects Fall 2021/DSD Final Project/ARM_MultiCycle\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/hkarp/Documents/Final Projects Fall 2021/DSD Final Project/ARM_MultiCycle/ARM_MultiCycle.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+open_wave_config {C:/Users/hkarp/Documents/Final Projects Fall 2021/DSD Final Project/ARM_MultiCycle/Test_ARM_SC_behav.wcfg}
+source Test_ARM_SC.tcl
+run 11 us
+restart
+run 11 us
+close_sim
+launch_simulation
+open_wave_config {C:/Users/hkarp/Documents/Final Projects Fall 2021/DSD Final Project/ARM_MultiCycle/Test_ARM_SC_behav.wcfg}
+source Test_ARM_SC.tcl
+close_sim
+launch_simulation
+open_wave_config {C:/Users/hkarp/Documents/Final Projects Fall 2021/DSD Final Project/ARM_MultiCycle/Test_ARM_SC_behav.wcfg}
+source Test_ARM_SC.tcl
+restart
+run 11 us
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+open_wave_config {C:/Users/hkarp/Documents/Final Projects Fall 2021/DSD Final Project/ARM_MultiCycle/Test_ARM_SC_behav.wcfg}
+source Test_ARM_SC.tcl
+restart
+run 11 us
+close_sim
+launch_simulation
+open_wave_config {C:/Users/hkarp/Documents/Final Projects Fall 2021/DSD Final Project/ARM_MultiCycle/Test_ARM_SC_behav.wcfg}
+source Test_ARM_SC.tcl
+restart
+run 11 us
+close_sim
+launch_simulation
+open_wave_config {C:/Users/hkarp/Documents/Final Projects Fall 2021/DSD Final Project/ARM_MultiCycle/Test_ARM_SC_behav.wcfg}
+source Test_ARM_SC.tcl
+restart
+run 11 us
+save_wave_config {C:/Users/hkarp/Documents/Final Projects Fall 2021/DSD Final Project/ARM_MultiCycle/Test_ARM_SC_behav.wcfg}
+relaunch_sim
+restart
+run 11 us
+restart
+run 11 us
+restart
+run 1 us
+relaunch_sim
+restart
+relaunch_sim
+restart
+run 10 us
+save_wave_config {C:/Users/hkarp/Documents/Final Projects Fall 2021/DSD Final Project/ARM_MultiCycle/Test_ARM_SC_behav.wcfg}
+save_wave_config {C:/Users/hkarp/Documents/Final Projects Fall 2021/DSD Final Project/ARM_MultiCycle/Test_ARM_SC_behav.wcfg}
+restart
+run 2 us
+archive_project {C:/Users/hkarp/Documents/Final Projects Fall 2021/DSD Final Project/Milestone 2/ARM_MultiCycle.xpr.zip} -temp_dir {C:/Users/hkarp/Documents/Final Projects Fall 2021/DSD Final Project/ARM_MultiCycle/.Xil/Vivado-42932-Harrys-RazerPC} -force -include_local_ip_cache -include_config_settings
